@@ -8,26 +8,20 @@
              
 
 </head>
-<body class="h-full text-slate-800 antialiased font-sans">
+<body class="bg-gray-300 text-gray-800 min-h-screen">
 
      <!-- PLATFORM MAIN CONTAINER -->
-    <!-- The structure uses a reverse order in HTML so CSS sibling selectors (~) work perfectly -->
-    <div class="min-h-full flex flex-col md:flex-row">
+     <div class="min-h-full flex flex-col md:flex-row">
          
          <!-- SIDEBAR NAVIGATION -->
-        <aside class="w-full md:w-64 bg-indigo-600 text-slate-400 flex flex-col border-r border-slate-800 shrink-0">
+        <aside class="w-full md:w-64 bg-blue-700 text-white flex flex-col border-r border-slate-100 shrink-0">
             <!-- Brand Logo -->
             <div class="p-6 text-emerald-400 font-black text-2xl text-white border-b border-slate-800">
                 QuickCash<span class="text-white">KES</span>
             </div>
 
         <!-- Navigation Links -->
-            <nav class="flex-1 p-4 space-y-1">
-                <a href="#" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg text-white font-medium hover:bg-slate-800 transition-colors">
-                      
-                    <span>Overview</span>
-                </a>
-                <a href="#loan.html-page" class="flex items-center space-x-3 px-4 py-2.5 rounded-lg hover:bg-slate-800 hover:text-white-400 transition-colors">
+            <nav class="items-center space-y-1">                <a href="loan.html" class="bg-white text-blue-700 px-3 py-1 rounded-md font-semibold hover:text-gray-200">
                      <span></span>
                     <span>Apply for Loan</span>
                 </a>
@@ -38,9 +32,11 @@
         <div class="flex-1 flex flex-col min-w-0">
 
         <!-- TOP APP BAR -->
-            <header class="bg-white-900 border-b border-slate-200 px-6 py-4 flex items-center justify-between shadow-sm shrink-0">
-                <div class="text-sm font-medium text-white-600">Account:Holder </div>
-                <div class="h-8 w-8 rounded-full bg-emerald-100 text-emerald-700 flex item<a href="contact.html">
+            <header class="bg-blue-700 border-b border-slate-200 px-6 py-4 flex items-center justify-between shadow-sm shrink-0">
+                <div class="text-sm font-medium text-white">Account:Holder </div>
+                <div class="h-13 w-13 rounded-full bg-white text-blue-700 flex items shadow-sm shrink-0">
+                    <h1 class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center sm:text-center">Name</h1>
+                </div>
      
             </header>
 
@@ -51,51 +47,65 @@
                 <!-- Welcome Header & Navigation Button -->
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div>
-                        <h1 class="text-2xl font-bold text-slate-900">Dashboard</h1>
-                        <p class="text-sm text-slate-500 mt-1">Track your loans and limits in real-time.</p>
+                        <h1 class="text-2xl font-bold text-blue-700">Dashboard</h1>
+                        <p class="text-sm text-blue-700 mt-1">Track your loans and limits in real-time.</p>
                     </div>
                     <div>
-                         <a href="loan.html">
-                           <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-600">
-                             Request New Loan
-                     </button>
-                        <a href="about.html">
-                            <button type="button">About Us</button>
-                     </a>
-                     </a>
+                         <a href="loan.html" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                             Request New Loan</a>
+                           
+                     
+                        <a href="about.html" class="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-700">About</a>
+                     
                     </div>
                 </div>
 
             <!--  Grid Cards -->
-                <section class="grid grid-cols-1 gap-5 sm:grid-cols-3">
-                    <div class="bg-white shadow-sm rounded-xl border border-slate-200 p-6">
-                        <dt class="text-sm font-medium text-black text-slate-500 truncate">Total Balance Due</dt>
-                        <dd class="mt-1 text-3xl text-black font-semibold text-slate-900">KES 45,000</dd>
+                <section class="grid grid-cols-4 gap-5 sm:grid-cols-3">
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-white text-blue-700 truncate">Total Balance Due</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">KES 45,000</dd>
                     </div>
-                    <div class="bg-white shadow-sm rounded-xl border border-slate-200 p-6">
-                        <dt class="text-sm font-medium text-black truncate">Next Due Date</dt>
-                        <dd class="mt-1 text-3xl text-black font-semibold text-amber-600">June 05, 2026</dd>
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-white truncate">Next Due Date</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">June 05, 2026</dd>
                     </div>
-                    <div class="bg-white shadow-sm rounded-xl border border-slate-200 p-6">
-                        <dt class="text-sm font-medium text-black text-slate-500 truncate">Available Limit</dt>
-                        <dd class="mt-1 text-3xl text-black font-semibold text-amber-600">KES 120,000</dd>
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-white text-blue-700 truncate">Available Limit</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">KES 120,000</dd>
+                    </div>
+                </section>
+                <section class="grid grid-cols-4 gap-5 sm:grid-cols-3">
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-black text-white truncate">Total Balance Due</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">KES 45,000</dd>
+                    </div>
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-white truncate">Account verification status</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">Reward points
+                                 Approved loans
+                        </dd>
+                    </div>
+                    <div class="bg-blue-700 shadow-sm rounded-xl border border-slate-200 p-6">
+                        <dt class="text-sm font-medium text-white text-white truncate">Savings wallet</dt>
+                        <dd class="mt-1 text-3xl text-white font-semibold text-blue-700">Pending Applications</dd>
                     </div>
                 </section>
 
                 <!-- Transactions Summary Table -->
-                <section class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
+                <section class="bg-blue-700 border border-slate-200 rounded-xl shadow-sm overflow-hidden">
                     <div class="px-6 py-4 border-b border-slate-100">
-                        <h3 class="text-base text-black text-slate-900">Recent Applications</h3>
+                        <h3 class="text-base text-white text-blue-700">Recent Applications</h3>
                     </div>
                     <ul role="list" class="divide-y divide-slate-100">
                         <li class="flex items-center justify-between p-6">
                             <div>
-                                <p class="text-sm  text-black text-slate-900">Business Growth Loan</p>
-                                <p class="text-xs text-black mt-0.5">Submitted: May 24, 2026</p>
+                                <p class="text-sm  text-white text-blue-700">Business Growth Loan</p>
+                                <p class="text-xs text-white mt-0.5">Submitted: May 24, 2026</p>
                             </div>
                             <div class="flex items-center gap-x-4">
-                                <span class="text-sm text-black font-medium text-slate-900">KES 50,000</span>
-                                <span class="px-2 py-1 text-xs font-medium bg-amber-50 text-black-800 rounded border border-indigo-600">Pending</span>
+                                <span class="text-sm text-white font-medium text-blue-700">KES 50,000</span>
+                                <span class="px-2 py-1 text-xs font-medium bg-amber-50 text-blue-700 rounded border border-indigo-600">Pending</span>
                             </div>
                         </li>
                     </ul>

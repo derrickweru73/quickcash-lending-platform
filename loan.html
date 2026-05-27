@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickCash - Apply for Loan</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     
-</head>
-<body class="h-full text-slate-800 antialiased font-sans">
+      
+ </head>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
 
     <div class="min-h-full flex flex-col md:flex-row">
         
@@ -17,9 +17,9 @@
          <div class="flex-1 flex flex-col min-w-0"> 
             
             <!-- TOP APP BAR -->
-            <header class="bg-white  px-6 py-4 flex items-center justify-between shadow-sm shrink-0">
-                <div class="text-sm font-medium text-slate-600">Account:client details</div>
-                <div class="h-8 w-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm text-black-500">AM</div>
+            <header class="bg-blue-700  px-6 py-4 flex items-center justify-between shadow-sm shrink-0">
+                <div class="text-sm font-medium text-white">Account:client details</div>
+                <div class="h-12 w-12 rounded-full bg-white text-blue-700 flex items-center justify-center font-bold text-sm text-blue-700">profile</div>
             </header>
 
             <!-- LOAN APPLICATION FORM -->
@@ -27,31 +27,31 @@
                 
                 <!--  BACK TO DASHBOARD LINK -->
                 <div>
-                    <a href="dashboard.html" class="inline-flex items-center gap-x-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">
-                        ⬅ Return to Dashboard
+                    <a href="dashboard.html" class="inline-flex items-center gap-x-2 text-sm font-semibold text-blue-700 hover:text-blue-700">
+                        ⬅ Return
                     </a>
                 </div>
 
                 <!-- Page Header -->
-                <div class=>
-                    <h1 class="text-2xl font-bold text-slate-900">Complete Loan Application</h1>
-                    <p class="text-sm text-slate-500 mt-1">Please fill in your current details accurately for instant processing verification.</p>
+                <div class="bg-gray-200" flel flex-col> 
+                    <h1 class="text-2xl font-bold text-blue-700">Complete Loan Application</h1>
+                    <p class="text-sm text-blue-700 mt-1">Please fill in your current details accurately for instant processing verification.</p>
                 </div>
 
                 <!-- Form Setup -->
                   
                     
                     <!-- Section 1: Loan Customization -->
-                    <div class="bg-white  rounded-xl p-6 shadow-sm space-y-6">
-                        <h3 class="text-lg font-semibold text-slate-900 ">1 Loan Requirements</h3>
+                    <div class="bg-gray-200  rounded-xl p-6 shadow-sm space-y-6">
+                        <h3 class="text-lg font-semibold text-blue-700 "> Loan Requirements</h3>
                              <div>
-                                <label for="amount" class="flex text-sm font-medium text-slate-700">Requested Amount (KES)</label>
+                                <label for="amount" class="flex text-sm font-medium text-blue-700">Requested Amount (KES)</label>
                                 <input type="number" id="amount" name="amount" required min="1000" max="500000" placeholder="e.g. 50000" class="    
-                                 0 px-3 py-2 shadow-sm focus:  focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                 0 px-3 py-2 shadow-sm focus:  focus:outline-none focus:ring-1 focus:ring-blur-700 sm:text-sm">
                             </div>
                             <div>
                                 <label for="duration" class="block text-sm font-medium text-slate-700">Repayment Period</label>
-                                <select id="duration" name="duration" class=" rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none    ">
+                                <select id="duration" name="duration" class=" rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-white focus:outline-none    ">
                                     <option value="1">1 Month  </option>
                                     <option value="3">3 Months </option>
                                     <option value="6">6 Months </option>
@@ -59,46 +59,58 @@
                                 </select>
                             </div>
                             <div class="sm:col-span-2">
-                                <label for="reason" class="block text-sm font-medium text-slate-700">Purpose of Funds</label>
+                                <label for="reason" class="block text-sm font-medium text-blue-700">Purpose of Funds</label>
                                 <input type="text" id="reason" name="reason" required placeholder="e.g. Purchase of shop stock, school fees payment">  
                             </div>
                         </div>
                     </div>
 
                     
-                    <div class="bg-white border-slate-200 rounded-xl p-6 shadow-sm space-y-6">
-                        <h3 class="text-lg font-semibold text-slate-900 border-b border-slate-100 pb-2">2. Identity & Disbursement</h3>
+                    <div class="bg-gray-200 border-slate-200 rounded-xl p-6 shadow-sm space-y-6">
+                        <h3 class="text-lg font-semibold text-blue-700 border-b border-slate-100 pb-2">Identity & Disbursement</h3>
                          
                             <div>
-                                <label for="id-number" class="block text-sm font-medium text-slate-700">National ID / Passport Number</label>
-                                <input type="text" id="id-number" name="id_number" required class="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                <label for="Name" class="block text-sm font-medium text-blue-700">Full Name</label>
+                                <input type="text" id="name" name="fullname" required class="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-white focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
                             </div>
                             <div>
-                                <label for="dob" class="block text-sm font-medium text-slate-700">Date of Birth</label>
-                                <input type="date" id="dob" name="dob" required class="mt-1 block w- rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                <label for="id-number" class="block text-sm font-medium text-blue-700">National ID / Passport Number</label>
+                                <input type="text" id="id-number" name="id_number" required class="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-white focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
                             </div>
                             <div>
-                                <label for="phone-disburse" class="block text-sm font-medium text-slate-700">Mobile Money Phone Number</label>
-                                <input type="tel" id="phone-disburse" name="disbursement_phone" required placeholder="07XXXXXXXX" class="mt-1 block   rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                <label for="dob" class="block text-sm font-medium text-blue-700">Date of Birth</label>
+                                <input type="date" id="dob" name="dob" required class="mt-1 block w- rounded-lg border border-slate-300 px-3 py-2 shadow-sm focus:border-white focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-blue-700">Mobile Money Phone Number</label>
+                                <input type="tel" id="phone-disburse" name="disbursement_phone" required placeholder="07XXXXXXXX" class="mt-1 block   rounded-lg border border-white px-3 py-2 shadow-sm focus:border-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="text" class="block text-sm font-medium text-blue-700">Next of Kin</label>
+                                <input type="text" id="name" name="next of kin" required placeholder="full name" class="mt-1 block   rounded-lg border border-white px-3 py-2 shadow-sm focus:border-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="tel" class="block text-sm font-medium text-blue-700"> Next of kin Id number</label>
+                                <input type="tel" id="name" name="id-number" required placeholder="Id number" class="mt-1 block   rounded-lg border border-white px-3 py-2 shadow-sm focus:border-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
                             </div>
                         </div>
                     </div>
 
                     <!-- Section 3:  Financial Status -->
-                    <div class="bg-white flex-row rounded-xl p-6 shadow-sm space-y-6">
-                        <h3 class="text-lg font-semibold text-slate-900  pb-2">3. Financial & Employment Status</h3>
+                    <div class="bg-gray-200 flex-row rounded-xl p-6 shadow-sm space-y-6">
+                        <h3 class="text-lg font-semibold text-blue-700  pb-2">3. Financial & Employment Status</h3>
                          
                             <div>
-                                <label for="employment-type" class="block text-sm font-medium text-slate-700">Employment Status</label>
-                                <select id="employment-type" name="employment_status" class="mt-1 block w-full rounded-lg  px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                <label for="employment-type" class="block text-sm font-medium text-blue-700">Employment Status</label>
+                                <select id="employment-type" name="employment_status" class="mt-1 block w-full rounded-lg  px-3 py-2 shadow-sm focus:border-white- focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
                                     <option value="employed">Permanently Employed</option>
                                     <option value="self-employed">Self-Employed / Business Owner</option>
                                     <option value="contract">Contract Worker</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="income" class="block text-sm font-medium text-slate-700">Monthly Income (KES)</label>
-                                <input type="number" id="income" name="monthly_income" required placeholder="" class="mt-1 block w-full rounded-lg  px-3 py-2 shadow-sm focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 sm:text-sm">
+                                <label for="income" class="block text-sm font-medium text-blue-700">Monthly Income (KES)</label>
+                                <input type="number" id="income" name="monthly_income" required placeholder="" class="mt-1 block w-full rounded-lg  px-3 py-2 shadow-sm focus:border-white focus:outline-none focus:ring-1 focus:ring-blue-700 sm:text-sm">
                             </div>
                         </div>
                     </div>
@@ -110,11 +122,11 @@
                     <html class="space-y-4">
                         <div class="flex items-start">
                             <div class="flex h-5 items-center">
-                                <input id="terms" name="terms" type="checkbox" required class="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                                <input id="terms" name="terms" type="checkbox" required class="h-4 w-4 rounded border-white text-blue-700 focus:ring-blue-700">
                             </div>
                             <div class="ml-3 text-sm">
                                 <label for="terms" class="font-medium text-slate-700">Terms and Conditions</label>
-                                <p class="text-slate-500">I declare that all facts provided are authentic and authorize QuickCash to execute credit scoring validation checks.</p>
+                                <p class="text-blue-700">I declare that all facts provided are authentic and authorize QuickCash to execute credit scoring validation checks.</p>
                             </div>
                         </div>
 
@@ -124,13 +136,15 @@
                          
   <button 
     type="submit" 
-    class="w-full bg-white-600 hover:bg-indigo-600 text-black-500 font-medium py-3 px-4 rounded-md transition duration-200">
+    class="w-full bg-blue-700 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md transition duration-200 cursor-pointer">
     Submit Application
   </button>
   <a href="contact.html">
-  <button class="bg-white-500 text-white px-4 py-2 rounded hover:bg-white-600">
+  <button class="bg-gray-200 text-white px-4 py-2 rounded hover:">
     Support Email
   </button>
+
+  <div  >
 </div>
 </body>
 </html>

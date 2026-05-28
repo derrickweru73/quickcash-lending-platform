@@ -1,7 +1,7 @@
 # QuickCash Lending Platform
 
 ## Project Overview
-QuickCash Lending Platform is a simple web-based digital lending application designed to make borrowing money easier, faster, and more accessible.
+PesaCash chapchap is a simple web-based digital lending application designed to make borrowing money easier, faster, and more accessible.
 
 It helps users:
 - Apply for loans digitally
@@ -11,37 +11,25 @@ It helps users:
 
 ---
 
-## Problem Statement
-Traditional loan systems are often:
-- Slow and manual
+## Problems it solves
+- fast in meeting clients needs digitally
 - Paper-based
-- Hard to track
-- Expensive due to high interest
+- Easier to track
+- Low interest
+- Easy digital applications
 
-QuickCash solves this by providing:
-
-✅ Easy digital loan applications  
-✅ Smart repayment tracking  
-✅ Low-interest lending  
-✅ Simple user dashboard  
-
----
 
 ## Features
 - User Registration
 - User Login
 - Dashboard
-- Loan Application
-- Loan Tracking
-- Profile Management
-- Responsive Design
+- Loan Application form
+- Terms and conditions
 
 ---
 
 ## Project Structure
 
-bash
-quickcash-lending-platform/
 │── index.html
 │── register.html
 │── login.html
@@ -50,10 +38,6 @@ quickcash-lending-platform/
 │─
 ├── assets/
 │   └── images/
-│
-├── Tailwindcss
-│    
-│
 └── README.md
 
 
@@ -62,41 +46,26 @@ quickcash-lending-platform/
 ## Technologies Used
 - HTML5
 - Tailwind CSS vs4
-- JavaScript ( Future Functionality)
-- Git & GitHub
-
 ---
 
 ## Visual Identity
-*Brand Name:* QuickCash  
-*Primary Color:* Green (#22C55E) – trust and growth  
+*Brand Name:* PesaCash chapchap  
+*Primary Color:* white (#22C55E) – trust and growth  
 *Secondary Color:* Blue (#2563EB) – reliability  
 *Accent Color:* White (#FFFFFF) – clean design  
-
-*Logo Idea:*  
- QuickCash with a coin or wallet icon
-
 ---
 
 ## Typography
 Recommended fonts:
 - *Headings:* Poppins
 - *Body Text:* Inter / Roboto
-- *Buttons:* Bold Sans-serif
-
-Example:
-css
-font-family: 'Poppins', sans-serif;
-
+- *Buttons:*  Inter/Roboto
 
 ---
 
 ## Deployment
-You can deploy this project using:
-
-- [pages.github.com](https://reference-url-citation.invalid/0)
-- [netlify.com](https://reference-url-citation.invalid/1)
-- [vercel.com](https://reference-url-citation.invalid/2)
+- Github.com 
+- vercel.com 
 
 ### Deploy on GitHub Pages:
 1. Push project to GitHub
@@ -108,24 +77,17 @@ You can deploy this project using:
 ---
 
 ## Installation
-Clone the project:
-
-bash
-git clone https://github.com/yourusername/quickcash-lending-platform.git
-
-
+Gitbash
+  
 Open folder:
 
 bash
-cd quickcash-lending-platform
+cd  PesaCash chapchap
 
-
-Run by opening index.html in your browser.
-
+code .
 ---
 
 ## Contribution
-Contributions are welcome.
 
 You can help by:
 - Improving UI design
